@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore -->
+    <meta charset="utf-8">
+    <!-- prettier-ignore -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register for TechCon 2024</title>
   </head>
   <body>
     <header>
       <h1>Register for TechCon 2024</h1>
       <nav>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./schedule.html">Schedule</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./schedule.html">Schedule</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-      <form action="/submit-form" method="post"></form>
+      <h3>
+        Join thousands of tech enthusiasts, developers, and industry leaders at
+        TechCon 2024! Secure your spot by filling out the form below. We’re
+        excited to welcome you to a one-of-a-kind experience featuring keynotes,
+        workshops, and networking opportunities.
+      </h3>
+      <form action="/submit-form" method="post">
+        <p>
+          <label for="full_name">Full Name</label>
+          <!-- prettier-ignore -->
+          <input
+            type="text"
+            id="full_name"
+            name="full_name"
+            placeholder="John Doe"
+            required
+          >
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <!-- prettier-ignore -->
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johndoe@example.com"
+            required
+          >
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <!-- prettier-ignore -->
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          >
+        </p>
+        <p>
+          <!-- prettier-ignore -->
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree"
+            >I agree to the Terms and Conditions of attending TechCon
+            2024.</label
+          >
+        </p>
+        <button type="submit">Register Now</button>
+      </form>
     </main>
     <footer>
       <p>&copy; 2024 TechCon. All rights reserved.</p>
